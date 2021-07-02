@@ -1,0 +1,85 @@
+body{
+  background-color: white;
+}
+/* Css for first section-------------------------------------*/
+#firstSection div:nth-child(1) .btn-outline-secondary{
+  color: white;
+}
+#firstSection{
+  /* url, href has / src has \ */
+  background: url('../To be use/HomeSectionTop.png') no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 770px;
+  color: white;
+}
+
+#content div:nth-child(1) h1{
+  font-weight: 600;
+}
+#content div:nth-child(1) p{
+  width: 80%;
+}
+#content div:nth-child(1) button{
+  border-radius: 20px;
+}
+
+#diag img{
+  width: 60%;
+  height: 85%;
+}
+#content div:nth-child(1) div{
+  border-radius: 20px;
+}
+/* Css for second section-------------------------------------*/
+.card{
+  background-color: transparent;
+  border: none;
+}
+/* Css for third section-------------------------------------*/
+
+#thirdSection{
+  background-size: 100%;
+  height: 1050px;
+}
+#thirdSection button{
+  border-radius: 20px;
+}
+
+/* css for carousel section */
+
+/* last section */
+#lastSection{
+  height: 1010px;
+}
+@media only screen and (min-width: 0px) {
+  #lastSection{
+      background: url('../To be use/HomeSection3-mobile.png') no-repeat;
+  }
+  #thirdSection{
+    background: url('../To be use/HomeSection2-mobile.png') no-repeat;
+    padding: 300px 100px 0px 100px;
+    height: 900px;
+  }
+  #firstSection{
+    background: url('../To be use/HomeSectionTop-mobile.png') no-repeat;
+    height: 770px;
+  }
+  #content{
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #lastSection{
+      background: url('../To be use/HomeSection3.png') no-repeat;
+  }
+  #thirdSection{
+    background: url('../To be use/HomeSection2Patreon.png') no-repeat;
+    padding: 400px 100px 0px 400px;
+    height: 1050px;
+  }
+  #firstSection{
+    background: url('../To be use/HomeSectionTop.png') no-repeat;
+    height: 790px;
+  }
+}

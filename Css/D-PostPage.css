@@ -1,0 +1,58 @@
+body{
+    background-color: white;
+    background-size: contain;
+    color: white;
+}
+/* coverphotoSection */
+#coverPhotoSection{
+    height: 250px;
+    width: 100%;
+}
+/* description section */
+#descriptionSection>div{
+    background-color: rgb(245, 245, 245);
+    color: #4A4A4A;
+}
+/* last section */
+#lastSection{
+    height: 1010px;
+}
+@media only screen and (min-width: 0px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon-mobile.png') no-repeat;
+    }
+    .position-absolute{
+        top: -100px;
+    }
+    body{
+        background: url('../To be use/header-mobile.png') repeat-x;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon.png') no-repeat;
+    }
+    .position-absolute{
+        top: -120px;
+    }
+    body{
+        background: url('../To be use/header.png') repeat-x;
+    }
+}
+#lastSection button:hover{
+    background-color: #FFF3B8;
+    border: 1px solid #FFF3B8;
+    color: #4A4A4A;
+}
+#name{
+    color: #4A4A4A;
+}
+/* css */
+
+.position-relative>div{
+    border: 2px solid rgb(221, 220, 220);
+}
+.progress-bar{
+    background-color: #9683DD;
+}
+

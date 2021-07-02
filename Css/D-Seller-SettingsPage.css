@@ -1,0 +1,98 @@
+body{
+    background-color: white;
+    background-size: contain;
+}
+/* coverphotoSection */
+#coverPhotoSection{
+    height: 500px;
+    width: 100%;
+}
+/* firstSection */
+#firstSection div:nth-child(1) .btn-outline-secondary{
+    color: white;
+}
+#content div:nth-child(1) h1{
+    font-weight: 600;
+}
+#content div:nth-child(1) p{
+    width: 80%;
+}
+#content div:nth-child(1) button{
+    border-radius: 20px;
+}
+#diag img{
+    width: 60%;
+    height: 85%;
+}
+#content div:nth-child(1) div{
+    border-radius: 20px;
+}
+/* last section */
+#lastSection{
+    height: 1010px;
+}
+@media only screen and (min-width: 0px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon-mobile.png') no-repeat;
+    }
+    .position-absolute{
+        top: -100px;
+    }
+    body{
+        background: url('../To be use/header-mobile.png') repeat-x;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon.png') no-repeat;
+    }
+    .position-absolute{
+        top: -120px;
+    }
+    body{
+        background: url('../To be use/header.png') repeat-x;
+    }
+}
+
+/* form's css */
+.btn-primary {
+    color: #212529;
+}
+.btn-primary:focus{
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5);
+}
+.input1{
+    border-style: hidden;
+    border-bottom-style: groove;
+    background-color:black;
+    outline: none;
+    box-shadow:none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color:white;
+}
+.radius1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.radius2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* css */
+.position-absolute{
+    top: -100px;
+}
+#leftMenu a{
+    text-decoration: none;
+    color: #4A4A4A;
+}
+#luminaSection>div {
+    background-color: #F5F5F5;
+}
+#ideasSection>div {
+    background-color: #F5F5F5;
+}
+#leftMenu{
+    top: 70px;
+}

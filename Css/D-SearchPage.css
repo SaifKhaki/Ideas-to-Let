@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    background-size: 100% 100%;
+    color: white;
+}
+a{
+  color: inherit;
+  
+}
+@media only screen and (min-width: 0px) {
+  body{
+    background: url('../To be use/city-footer.png') repeat-x;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body{
+      background: url('../To be use/city-footer.png') repeat-x;
+  }
+}
+#searchSection{
+  height: 700px;
+  width: 100%;
+}

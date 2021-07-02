@@ -1,0 +1,126 @@
+create database web_project;
+Create table web_project.user_table(
+    user_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    f_name varchar(60),
+    l_name varchar(60),
+    email varchar(60),
+    e_password varchar(60),
+    lumina_stage varchar (20) DEFAULT 'Fire'
+);
+create table web_project.idea_created(
+    user_id int,
+    title varchar(60),
+    idea_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    photon int,
+    foreign key(user_id) references user_table(user_id)
+);
+create table web_project.idea_links(
+    idea_id int,
+    facebook text,
+    youtube text,
+    patreon text,
+    video text,
+    foreign key(idea_id) references idea_created(idea_id)
+);
+create table web_project.idea_desc(
+    idea_id int,
+    point_id int NOT NULL,
+    point_string text,
+    PRIMARY KEY (idea_id, point_id),
+    foreign key (idea_id) references idea_created(idea_id)
+);
+create table web_project.idea_standard(
+    idea_id int,
+    cond1 boolean,
+    cond2 boolean,
+    cond3 boolean,
+    comments text,
+    price int,
+    foreign key (idea_id) references idea_created(idea_id)
+);
+create table web_project.idea_premium(
+    idea_id int,
+    cond1 boolean,
+    cond2 boolean,
+    cond3 boolean,
+    comments text,
+    price int,
+    foreign key (idea_id) references idea_created(idea_id)
+);
+create table web_project.idea_extended(
+    user_id int,
+    idea_id int,
+    ext_idea_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title text,
+    photon int,
+    status_ boolean DEFAULT False,
+    foreign key (idea_id) references idea_created(idea_id),
+    foreign key (user_id) references user_table(user_id)
+);
+create table web_project.idea_extended_desc(
+    point_id int,
+    ext_idea_id int,
+    ext_point_id int NOT NULL,
+    point_string text ,
+    PRIMARY KEY (ext_idea_id, ext_point_id),
+    foreign key (ext_idea_id) references idea_extended(ext_idea_id),
+    foreign key (point_id) references idea_desc(point_id)
+); 
+create table web_project.ext_standard(
+    ext_idea_id int,
+    cond1 boolean,
+    cond2 boolean,
+    cond3 boolean,
+    comments text,
+    price int,
+    foreign key (ext_idea_id) references idea_extended(ext_idea_id)
+);
+create table web_project.ext_premium(
+    ext_idea_id int,
+    cond1 boolean,
+    cond2 boolean,
+    cond3 boolean,
+    comments text,
+    price int,
+    foreign key (ext_idea_id) references idea_extended(ext_idea_id)
+);
+create table web_project.ideas_purchased(
+    user_id int,
+    idea_id int,
+    foreign key (user_id) references user_table(user_id),
+    foreign key (idea_id) references idea_created(idea_id)
+);
+
+
+create table web_project.problem_posted(
+    prob_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title text,
+    user_id int,
+    foreign key (user_id) references user_table(user_id)
+);
+create table web_project.problem_links(
+    prob_id int,
+    overflow text,
+    git text,
+    foreign key(prob_id) references problem_posted(prob_id)
+);
+create table web_project.problem_desc(
+    prob_id int ,
+    prob_point_id int NOT NULL,
+    point_string text,
+    PRIMARY KEY (prob_id, prob_point_id),
+    foreign key (prob_id) references problem_posted(prob_id)
+); 
+create table web_project.problem_extended(
+    ext_problem_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    prob_id int,
+    foreign key(prob_id) references problem_posted(prob_id)
+);
+create table web_project.problem_extended_desc(
+    prob_point_id int,
+    ext_problem_id int,
+    point_string text,
+    PRIMARY KEY (ext_problem_id, prob_point_id),
+    foreign key (ext_problem_id) references problem_extended(ext_problem_id),
+    foreign key (prob_point_id) references problem_desc(prob_point_id)
+);

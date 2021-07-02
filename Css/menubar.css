@@ -1,0 +1,82 @@
+body{
+    background-color: white;
+    background: url('../To be use/header.png') repeat-x;
+    background-size: contain;
+}
+.navbar-nav a, .navbar-nav button{
+    color: rgb(253, 253, 253);
+}
+#miniBar li{
+    border-top: 2px solid transparent;
+}
+#miniBar button:focus {
+    outline: none;
+    box-shadow: none;
+}
+#lastSection{
+    height: 1010px;
+}
+.input1{
+    border-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    border-radius: 0px;
+    outline: none;
+    box-shadow:none;
+    color:white;
+}
+.input2{
+    border-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    border-radius: 0px;
+    outline: none;
+    box-shadow:none;
+}
+.input1:focus{
+    border-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    border-radius: 0px;
+    outline: none;
+    box-shadow:none;
+    color:white;
+}
+.input2:focus{
+    border-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    border-radius: 0px;
+    outline: none;
+    box-shadow:none;
+}
+.breadcrumb li a:hover{
+    text-decoration: none;
+}
+@media only screen and (min-width: 0px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon-mobile.png') no-repeat;
+    }
+    .position-absolute{
+        top: -100px;
+    }
+    body{
+        background: url('../To be use/header-mobile.png') repeat-x;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon.png') no-repeat;
+    }
+    .position-absolute{
+        top: -120px;
+    }
+    body{
+        background: url('../To be use/header.png') repeat-x;
+    }
+}
+#lastSection button:hover{
+    background-color: #FFF3B8;
+    border: 1px solid #FFF3B8;
+    color: #4A4A4A;
+}

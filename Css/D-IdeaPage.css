@@ -1,0 +1,57 @@
+/* coverphotosection css */
+#coverPhotoSection img{
+    width: 100%;
+}
+#lastSection{
+    height: 1010px;
+}
+@media only screen and (min-width: 0px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon-mobile.png') no-repeat;
+    }
+    .cover-height {
+        height: 300px;
+    }
+    .dp-height{
+        height: 180px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #lastSection{
+        background: url('../To be use/lastSectionSellerpatreon.png') no-repeat;
+    }
+    .cover-height {
+        height: 500px;
+    }
+    .dp-height{
+        height: 180px;
+    }
+}
+
+#lastSection button:hover{
+    background-color: #FFF3B8;
+    border: 1px solid #FFF3B8;
+    color: #4A4A4A;
+}
+#name{
+    color: #4A4A4A;
+}
+/* css */
+
+.position-absolute{
+    top: -120px;
+}
+
+.position-relative>div{
+    border: 2px solid rgb(221, 220, 220);
+}
+.progress-bar{
+    background-color: #9683DD;
+}
+#ideaID button{
+    color: white;
+}
+#descriptionSection>div{
+    background-color: rgb(245, 245, 245);
+    color: #4A4A4A;
+}
